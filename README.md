@@ -3,6 +3,6 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/7e4d2c87224589c0c292/maintainability)](https://codeclimate.com/github/Viewsoul237/python-project-49/maintainability)
 
-## [Пример работы игры 'Четное или нечетное'](https://asciinema.org/a/LLgcffLzqnRqwRXuNeSzkVHhy)
+## [Пример работы игры 'Четное или нечетное'](https://asciinema.org/a/E2NI7GyRSsfAe6x47zjovfayT)
 
 ## [Пример работы игры 'Калькулятор'](https://asciinema.org/a/J0vL291RCEtqFWnLqZHutvGxE)
