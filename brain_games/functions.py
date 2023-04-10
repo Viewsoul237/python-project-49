@@ -30,11 +30,13 @@ def give_a_task(number_of_game):
     calc - игра номер 1
     gcd - игра номер 2
     progression - игра номер 3
+    prime - игра номер 4
     """
     tasks = ["Answer \"yes\" if the number is even, otherwise answer \"no\".",
              "What is the result of the expression?",
              "Find the greatest common divisor of given numbers.",
-             "What number is missing in the progression?"]
+             "What number is missing in the progression?",
+             'Answer "yes" if given number is prime. Otherwise answer "no".']
     return tasks[number_of_game]
 
 
@@ -61,3 +63,13 @@ def find_gcd(first_num, second_num):
     for elem in dividers:
         if second_num % elem == 0:
             return elem
+
+
+def is_prime(number: int) -> bool:
+    """Проверяет, является ли число простым."""
+    if number < 2:
+        return False
+    for i in range(2, number + 1 // 2):
+        if number % i == 0:
+            return False
+    return True

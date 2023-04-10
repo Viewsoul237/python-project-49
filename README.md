@@ -9,4 +9,6 @@
 
 ### [Пример работы игры 'Нахождение общего делителя (НОД)'](https://asciinema.org/a/Ubtv8BYOe8PzaMulUGLw2eC1y) brain-gcd
 
-### [Пример работы игры 'Арифметическая прогрессия](https://asciinema.org/a/478TAkml5JcvrZ0NT7inMkPBK) brain-progression
+### [Пример работы игры 'Арифметическая прогрессия'](https://asciinema.org/a/478TAkml5JcvrZ0NT7inMkPBK) brain-progression
+
+### [Пример работы игры 'Простое ли число'](https://asciinema.org/a/bytrtZXQtS2H9LPiLo9Rlcn2R) brain-prime
