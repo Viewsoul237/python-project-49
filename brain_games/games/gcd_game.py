@@ -15,15 +15,12 @@ def gcd_game():
         second_number = create_random_int()
         print(f"Question: {first_number} {second_number}")
         user_answer = int(input("Your answer: "))  # ответ пользователя
-        correct_answer = find_gcd(first_number, second_number) # вычисляем НОД
+        correct_answer = find_gcd(first_number, second_number)  # вычисляем НОД
         result = give_result(user_answer, correct_answer, name)  # сравниваем
-        # ответы и печатаем соответствующий текст
+        #  ответы и печатаем соответствующий текст
         if not result:
             break
         life_counter -= 1
 
     if life_counter == 0:
         print(f"Congratulations, {name}!")
-
-
-
