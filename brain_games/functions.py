@@ -29,14 +29,16 @@ def give_a_task(number_of_game):
     even - игра номер 0
     calc - игра номер 1
     gcd - игра номер 2
+    progression - игра номер 3
     """
     tasks = ["Answer \"yes\" if the number is even, otherwise answer \"no\".",
              "What is the result of the expression?",
-             "Find the greatest common divisor of given numbers."]
+             "Find the greatest common divisor of given numbers.",
+             "What number is missing in the progression?"]
     return tasks[number_of_game]
 
 
-def give_result(user_answer, correct_answer, user_name):
+def give_result(user_answer, correct_answer, user_name) -> bool:
     """Сравнивает ответ пользователя с корректным, печатает вывод."""
     if user_answer == correct_answer:
         print("Correct!")

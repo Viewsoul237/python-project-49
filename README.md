@@ -8,3 +8,5 @@
 ## [Пример работы игры 'Калькулятор'](https://asciinema.org/a/J0vL291RCEtqFWnLqZHutvGxE)
 
 ## [Пример работы игры 'Нахождение общего делителя (НОД)'](https://asciinema.org/a/Ubtv8BYOe8PzaMulUGLw2eC1y)
+
+## [Пример работы игры 'Арифметическая прогрессия](https://asciinema.org/a/478TAkml5JcvrZ0NT7inMkPBK)

@@ -10,7 +10,7 @@ def calc_game():
     """Основная логика игры."""
     name = greeting()  # здороваемся и получаем имя пользователя
     print(give_a_task(1))  # печатаем задание игры
-    life_counter = 3  # наши жизни
+    life_counter = 3  # счетчик попыток
     for _ in range(life_counter):
         math_signs = ["+", "-", "*"]
         sign_in_game = choice(math_signs)  # генерируем случайный мат.знак

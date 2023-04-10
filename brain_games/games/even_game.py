@@ -9,7 +9,7 @@ def even_game():
     """Основная логика игры."""
     name = greeting()  # здороваемся и получаем имя пользователя
     print(give_a_task(0))  # печатаем задание игры
-    life_counter = 3  # наши жизни
+    life_counter = 3  # счетчик попыток
     for _ in range(life_counter):
         temp_number = create_random_int()  # генерируем случайное число
         print(f"Question: {temp_number}")
