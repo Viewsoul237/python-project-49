@@ -27,10 +27,12 @@ def give_a_task(number_of_game):
     """Печатает задание к выбранной игре.
 
     even - игра номер 0
-    calc - игри номер 1
+    calc - игра номер 1
+    gcd - игра номер 2
     """
     tasks = ["Answer \"yes\" if the number is even, otherwise answer \"no\".",
-             "What is the result of the expression?"]
+             "What is the result of the expression?",
+             "Find the greatest common divisor of given numbers."]
     return tasks[number_of_game]
 
 
@@ -44,3 +46,16 @@ def give_result(user_answer, correct_answer, user_name):
               f" Correct answer was '{correct_answer}'.")
         print(f"Let's try again, {user_name}!")
         return False
+
+
+def find_gcd(first_num, second_num):
+    """Возвращает наибольший общий делитель двух чисел (НОД)"""
+    dividers = []
+    for i in range(1, first_num + 1):
+        # заполняем список dividers делителями first_num
+        if first_num % i == 0:
+            dividers.append(i)
+    dividers.reverse()
+    for elem in dividers:
+        if second_num % elem == 0:
+            return elem

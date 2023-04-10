@@ -6,3 +6,5 @@
 ## [Пример работы игры 'Четное или нечетное'](https://asciinema.org/a/E2NI7GyRSsfAe6x47zjovfayT)
 
 ## [Пример работы игры 'Калькулятор'](https://asciinema.org/a/J0vL291RCEtqFWnLqZHutvGxE)
+
+## [Пример работы игры 'Нахождение общего делителя (НОД)'](https://asciinema.org/a/Ubtv8BYOe8PzaMulUGLw2eC1y)
