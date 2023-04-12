@@ -1,30 +1,28 @@
 from random import randint
-from brain_games.functions import greeting
-from brain_games.functions import give_a_task
-from brain_games.functions import give_result
 
 
-def progression_game():
-    """Основная логика игры."""
-    name = greeting()  # здороваемся и получаем имя пользователя
-    print(give_a_task(3))  # печатаем задание игры
-    life_counter = 3  # счетчик попыток
-    for _ in range(life_counter):
-        progression_step = randint(2, 25)  # генерируем шаг прогрессии
-        progression_start = randint(1, 20)
-        progression = [str(progression_start + (progression_step * i))
-                       for i in range(10)]  # создаем прогрессию с шагом
+TASK_DESCRIPTION = "What number is missing in the progression?"
+PROGRESSION_STEP_RANGE_BEGIN = 2
+PROGRESSION_STEP_RANGE_END = 25
+PROGRESSION_START_RANGE_BEGIN = 1
+PROGRESSION_START_RANGE_END = 20
+RANDOM_POSITION_RANGE_BEGIN = 0
+RANDOM_POSITION_RANGE_END = 9
 
-        random_position = int(randint(0, 9))
-        correct_answer = int(progression[random_position])
-        progression[random_position] = '..'
-        print("Question:", *progression)  # выводим задание
-        user_answer = int(input("Your answer: "))  # ответ пользователя
-        result = give_result(user_answer, correct_answer, name)  # сравниваем
-        # ответы и печатаем соответствующий текст
-        if not result:  # при неудаче игра заканчивается
-            break
-        life_counter -= 1  # при успехе попытка вычитается
 
-    if life_counter == 0:
-        print(f"Congratulations, {name}!")
+def create_question_and_answer():
+    progression_step = randint(PROGRESSION_STEP_RANGE_BEGIN,
+                               PROGRESSION_STEP_RANGE_END)
+    # генерируем шаг прогрессии
+    progression_start = randint(PROGRESSION_START_RANGE_BEGIN,
+                                RANDOM_POSITION_RANGE_END)
+
+    progression = [str(progression_start + (progression_step * i))
+                   for i in range(10)]  # создаем прогрессию с шагом
+    random_position = int(randint(RANDOM_POSITION_RANGE_BEGIN,
+                                  RANDOM_POSITION_RANGE_END))
+    correct_answer = int(progression[random_position])
+    progression[random_position] = '..'
+    question = " ".join(progression).strip()
+
+    return question, correct_answer
