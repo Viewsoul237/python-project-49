@@ -8,15 +8,9 @@ END_RANGE = 100
 
 def find_gcd(first_num, second_num):
     """Возвращает наибольший общий делитель двух чисел (НОД)"""
-    dividers = []
-    for i in range(1, first_num + 1):
-        # заполняем список dividers делителями first_num
-        if first_num % i == 0:
-            dividers.append(i)
-    dividers.reverse()
-    for elem in dividers:
-        if second_num % elem == 0:
-            return elem
+    while second_num != 0:
+        first_num, second_num = second_num, first_num % second_num
+    return first_num
 
 
 def create_question_and_answer():
