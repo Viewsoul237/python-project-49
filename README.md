@@ -16,6 +16,7 @@ pip install --user git+https://github.com/Viewsoul237/python-project-49
 
 
 # Игры
+Для запуска игры используйте команду, указанную ниже игры.
 
 ### 1) Четное или нечетное [пример работы](https://asciinema.org/a/E2NI7GyRSsfAe6x47zjovfayT)
 ```
