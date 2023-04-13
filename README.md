@@ -26,15 +26,15 @@ brain-even
 ```
 brain-calc
 ```
-### Нахождение общего делителя (НОД) [пример работы](https://asciinema.org/a/Ubtv8BYOe8PzaMulUGLw2eC1y)
+### 3) Нахождение общего делителя (НОД) [пример работы](https://asciinema.org/a/Ubtv8BYOe8PzaMulUGLw2eC1y)
 ```
 brain-gcd
 ```
-### Арифметическая прогрессия [пример работы](https://asciinema.org/a/478TAkml5JcvrZ0NT7inMkPBK)
+### 4) Арифметическая прогрессия [пример работы](https://asciinema.org/a/478TAkml5JcvrZ0NT7inMkPBK)
 ```
 brain-progression
 ```
-### Простое ли число [пример работы](https://asciinema.org/a/bytrtZXQtS2H9LPiLo9Rlcn2R)
+### 5) Простое ли число [пример работы](https://asciinema.org/a/bytrtZXQtS2H9LPiLo9Rlcn2R)
 ```
 brain-prime
 ```
