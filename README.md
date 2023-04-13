@@ -3,16 +3,38 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/7e4d2c87224589c0c292/maintainability)](https://codeclimate.com/github/Viewsoul237/python-project-49/maintainability)
 
-# Пять небольших консольных игр для прокачки мозгов!
+# Brain Games project
 
-## [Установка](https://asciinema.org/a/LJuRoRQAu5mta91P8HBgfbbGh) pip install --user git+https://github.com/Viewsoul237/python-project-49
+Пять небольших консольных игр для прокачки мозгов!
 
-### [Пример работы игры 'Четное или нечетное'](https://asciinema.org/a/E2NI7GyRSsfAe6x47zjovfayT) brain-even
+## Установка:
 
-### [Пример работы игры 'Калькулятор'](https://asciinema.org/a/J0vL291RCEtqFWnLqZHutvGxE) brain-calc
+### Используя pip [Демонстрация](https://asciinema.org/a/LJuRoRQAu5mta91P8HBgfbbGh)
 
-### [Пример работы игры 'Нахождение общего делителя (НОД)'](https://asciinema.org/a/Ubtv8BYOe8PzaMulUGLw2eC1y) brain-gcd
+```
+pip install --user git+https://github.com/Viewsoul237/python-project-49
+```
 
-### [Пример работы игры 'Арифметическая прогрессия'](https://asciinema.org/a/478TAkml5JcvrZ0NT7inMkPBK) brain-progression
 
-### [Пример работы игры 'Простое ли число'](https://asciinema.org/a/bytrtZXQtS2H9LPiLo9Rlcn2R) brain-prime
+# Игры
+
+### 1) Четное или нечетное [пример работы](https://asciinema.org/a/E2NI7GyRSsfAe6x47zjovfayT)
+```
+brain-even
+```
+### 2) Калькулятор [пример работы](https://asciinema.org/a/J0vL291RCEtqFWnLqZHutvGxE) 
+```
+brain-calc
+```
+### Нахождение общего делителя (НОД) [пример работы](https://asciinema.org/a/Ubtv8BYOe8PzaMulUGLw2eC1y)
+```
+brain-gcd
+```
+### Арифметическая прогрессия [пример работы](https://asciinema.org/a/478TAkml5JcvrZ0NT7inMkPBK)
+```
+brain-progression
+```
+### Простое ли число [пример работы](https://asciinema.org/a/bytrtZXQtS2H9LPiLo9Rlcn2R)
+```
+brain-prime
+```
