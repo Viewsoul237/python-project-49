@@ -24,10 +24,10 @@ def give_result(user_answer, correct_answer, user_name) -> bool:
 
 def run_game(task, question_and_answer):
     """Движок игры"""
-    global LIFE_COUNTER
+    counter = LIFE_COUNTER
     name = greeting()  # печатаем задание игры
     print(task)
-    for _ in range(LIFE_COUNTER):
+    for _ in range(counter):
         temp_question, correct_answer = question_and_answer()  # создаем
         # вопрос и ответ
         print(f"Question: {temp_question}")  # печатаем вопрос
@@ -37,7 +37,7 @@ def run_game(task, question_and_answer):
         # ответы и печатаем соответствующий текст
         if not result:
             break
-        LIFE_COUNTER -= 1
+        counter -= 1
 
-    if LIFE_COUNTER == 0:
+    if counter == 0:
         print(f"Congratulations, {name}!")
