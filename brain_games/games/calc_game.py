@@ -6,12 +6,12 @@ TASK_DESCRIPTION = "What is the result of the expression?"
 BEGIN_RANGE = 1
 END_RANGE = 100
 END_RANGE_FOR_MULTIPLICATION = 15
+MATH_SIGNS = ("+", "-", "*")
 
 
 def create_question_and_answer():
     """Генерирует вопрос и ответ"""
-    math_signs = ["+", "-", "*"]
-    sign_in_game = choice(math_signs)  # генерируем случайный мат. знак
+    sign_in_game = choice(MATH_SIGNS)  # генерируем случайный мат. знак
     x = randint(BEGIN_RANGE, END_RANGE)  # генерируем случайное число
     if sign_in_game == "*":  # ограничение множителя,
         # чтобы можно было считать в уме

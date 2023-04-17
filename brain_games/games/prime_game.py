@@ -1,5 +1,6 @@
 from random import randint
 
+from brain_games.engine import set_yes_or_no
 
 TASK_DESCRIPTION = 'Answer "yes" if given number is prime. ' \
                    'Otherwise answer "no".'
@@ -20,7 +21,6 @@ def is_prime(number: int) -> bool:
 def create_question_and_answer():
     """Генерирует вопрос и ответ"""
     question = randint(BEGIN_RANGE, END_RANGE)
-    prime = is_prime(question)
-    correct_answer = "yes" if prime else "no"
+    correct_answer = set_yes_or_no(is_prime(question))
 
     return question, correct_answer
