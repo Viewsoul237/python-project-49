@@ -1,15 +1,15 @@
 import prompt
 
 LIFE_COUNTER = 3
-CORRECT_ANSWER = "yes"
-INCORRECT_ANSWER = "no"
+POSITIVE_ANSWER = "yes"
+NEGATIVE_ANSWER = "no"
 
 
-def set_yes_or_no(answer: bool) -> str:
-    """Возвращает строку 'yes' или 'no' в зависимости от аргумента"""
+def set_response_type(answer: bool) -> str:
+    """Возвращает тип ответа (положительный или отрицательный)"""
     if answer:
-        return CORRECT_ANSWER
-    return INCORRECT_ANSWER
+        return POSITIVE_ANSWER
+    return NEGATIVE_ANSWER
 
 
 def greeting() -> str:
