@@ -1,6 +1,6 @@
 from random import randint
 
-from brain_games.engine import set_response_type
+from brain_games.utils import set_response_type
 
 TASK_DESCRIPTION = "Answer \"yes\" if the number is even," \
                    " otherwise answer \"no\"."

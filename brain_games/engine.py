@@ -1,15 +1,9 @@
+from typing import Union
+
 import prompt
 
+
 LIFE_COUNTER = 3
-POSITIVE_ANSWER = "yes"
-NEGATIVE_ANSWER = "no"
-
-
-def set_response_type(answer: bool) -> str:
-    """Возвращает тип ответа (положительный или отрицательный)"""
-    if answer:
-        return POSITIVE_ANSWER
-    return NEGATIVE_ANSWER
 
 
 def greeting() -> str:
@@ -20,7 +14,8 @@ def greeting() -> str:
     return name
 
 
-def give_result(user_answer, correct_answer, user_name) -> bool:
+def give_result(user_answer: str, correct_answer: Union[int, str],
+                user_name: str) -> bool:
     """Сравнивает ответ пользователя с корректным, печатает вывод."""
     if user_answer.lower() == str(correct_answer):
         print("Correct!")
@@ -31,7 +26,7 @@ def give_result(user_answer, correct_answer, user_name) -> bool:
     return False
 
 
-def run_game(task, question_and_answer):
+def run_game(task: str, question_and_answer):
     """Движок игры"""
     name = greeting()  # печатаем задание игры
     print(task)

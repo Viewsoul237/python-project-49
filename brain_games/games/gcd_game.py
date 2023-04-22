@@ -6,7 +6,7 @@ BEGIN_RANGE = 1
 END_RANGE = 100
 
 
-def find_gcd(first_num, second_num):
+def find_gcd(first_num: int, second_num: int) -> int:
     """Возвращает наибольший общий делитель двух чисел (НОД)"""
     while second_num != 0:
         first_num, second_num = second_num, first_num % second_num
